@@ -3,34 +3,31 @@ title: Hyper Docs
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 全面管理与快速检索相结合的文档，让工作更高效
   image:
     file: ../../assets/undraw_nature_m5ll.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 查看文档
+      link: /guides/getting-started/
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+<CardGrid>
+	<Card title="更新首页" icon="pencil">
+		编辑 `src/content/docs/index.mdx` 后查看本页变化。
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="添加新的内容" icon="add-document">
+		添加Markdown或MDX文件到 `src/content/docs` 来创建新页面。
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="配置项目" icon="setting">
+		在 `astro.config.mjs` 中编辑侧边栏和其他配置。
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="查看文档" icon="open-book">
+	  更多信息请访问 [Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>

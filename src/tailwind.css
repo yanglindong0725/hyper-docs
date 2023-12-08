@@ -1,0 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.expressive-code * {
+  margin: 0 !important;
+}

@@ -1,9 +1,11 @@
 ---
-title: Example Guide
+title: Choose Token
 description: A guide in my new Starlight docs site.
 ---
 
-# Token-list token列表
+# _Token-list token列表_
+
+[guides](/guides/example/)
 
 针对`tokenType`类型使用
 
@@ -17,6 +19,36 @@ interface tokenType {
   logoURI: string
   isRecommended: boolean
 }
+```
+
+```js "return true;" ins="inserted" del="deleted"
+function demo() {
+  console.log('These are inserted and deleted marker types');
+  // The return statement uses the default marker type
+  return true;
+}
+```
+
+```js "Individual terms" /Even.*supported/
+// Individual terms can be highlighted, too
+function demo() {
+  return 'Even regular expressions are supported';
+}
+```
+
+```diff lang="js"
+  function thisIsJavaScript() {
+    // This entire block gets highlighted as JavaScript,
+    // and we can still add diff markers to it!
+-   console.log('Old code to be removed')
++   console.log('New and shiny code!')
+
+  }
+```
+
+```js
+// my-test-file.js
+console.log('Hello World!');
 ```
 
 ## 库及组件
